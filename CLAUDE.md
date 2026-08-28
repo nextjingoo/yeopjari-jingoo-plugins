@@ -1,4 +1,4 @@
-# 지침플러그인
+# 플러그인배포
 
 "옆자리 진구씨" 채널에서 다루는 회사 업무용 AI 지침을 Claude Code 플러그인으로 패키징해 배포하는 저장소다. GitHub public repo(`nextjingoo/yeopjari-jingoo-plugins`)로 push되어 있고, 메인 작업 폴더(`(0)ClaudeCode`)의 옵시디언 볼트와는 별개의 독립 git 저장소다.
 
@@ -7,7 +7,7 @@
 # 구조
 
 ```
-지침플러그인/
+플러그인배포/
 ├── .claude-plugin/marketplace.json   ← 마켓플레이스 카탈로그
 └── plugins/
     └── <plugin-name>/
