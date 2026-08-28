@@ -1,6 +1,6 @@
 # 플러그인배포
 
-"옆자리 진구씨"가 배포하는 회사 업무용 AI 지침 Claude Code 플러그인 모음입니다.
+"옆자리 진구씨"가 배포하는 회사 업무용과 일상에서 유용한 AI 지침 Claude Code 플러그인 모음입니다.
 
 저장소: https://github.com/nextjingoo/yeopjari-jingoo-plugins
 

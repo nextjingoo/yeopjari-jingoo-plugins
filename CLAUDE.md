@@ -1,6 +1,6 @@
 # 플러그인배포
 
-"옆자리 진구씨" 채널에서 다루는 회사 업무용 AI 지침을 Claude Code 플러그인으로 패키징해 배포하는 저장소다. GitHub public repo(`nextjingoo/yeopjari-jingoo-plugins`)로 push되어 있고, 메인 작업 폴더(`(0)ClaudeCode`)의 옵시디언 볼트와는 별개의 독립 git 저장소다.
+"옆자리 진구씨" 채널에서 다루는 회사 업무용과 일상에서 유용한 AI 지침을 Claude Code 플러그인으로 패키징해 배포하는 저장소다. GitHub public repo(`nextjingoo/yeopjari-jingoo-plugins`)로 push되어 있고, 메인 작업 폴더(`(0)ClaudeCode`)의 옵시디언 볼트와는 별개의 독립 git 저장소다.
 
 사용자 설치 안내는 [UserGuide.md](UserGuide.md)에 있다 — 이 파일은 유지보수(구조·규칙·왜 이렇게 했는지) 전용이다.
 

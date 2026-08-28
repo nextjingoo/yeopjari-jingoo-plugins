@@ -3,7 +3,7 @@
   "owner": {
     "name": "옆자리진구씨"
   },
-  "description": "회사 업무용 AI 지침을 Claude Code 플러그인으로 배포하는 마켓플레이스",
+  "description": "회사 업무용과 일상에서 유용한 AI 지침을 Claude Code 플러그인으로 배포하는 마켓플레이스",
   "plugins": [
     {
       "name": "summary-report-writer",
