@@ -39,6 +39,34 @@ claude plugin install <플러그인 이름>
 
 설치 후 "Run /reload-plugins to activate."가 뜨면 `/reload-plugins`를 한 번 더 실행합니다.
 
+## 업데이트 방법
+
+플러그인 내용이 개정되면 버전이 올라갑니다. 이미 설치한 플러그인은 아래 방법으로 최신 버전을 받을 수 있습니다.
+
+### 터미널 (CLI)
+
+```
+claude plugin marketplace update yeopjari-jingoo-plugins
+claude plugin install <플러그인 이름>@yeopjari-jingoo-plugins
+```
+
+### VSCode 확장
+
+1. `Ctrl+Shift+P` → `Claude: Plugin marketplace add` 실행 → `nextjingoo/yeopjari-jingoo-plugins`를 다시 입력해 마켓플레이스 정보를 새로고침
+2. `Ctrl+Shift+P` → `Claude: Apply plugin changes`로 적용
+
+### 데스크톱 앱
+
+1. 채팅창 프롬프트 박스 옆 **+** 버튼 → **플러그인** → **플러그인 탐색** 클릭
+2. 뜬 창에서 **코드** 탭 선택 → `yeopjari-jingoo-plugins` 마켓플레이스 옆 **···** 클릭 → **업데이트 확인** 클릭
+3. 업데이트가 있으면 플러그인 이름 오른쪽에 주황색 점(●)이 표시됩니다. 톱니바퀴(**관리**) 아이콘 클릭
+4. 플러그인 상세 화면에서 파란색으로 활성화된 **업데이트** 버튼 클릭
+5. 버전 번호가 올라가고 화면 아래에 "1.0.1에서 1.0.2로 업데이트되었습니다" 같은 알림이 뜨면 완료
+
+**주황색 점이 뜨지 않거나 업데이트 버튼이 회색으로 비활성화돼 있으면** 최신 버전이 아직 반영되지 않은 것입니다. 이때는 삭제 후 재설치합니다.
+1. 플러그인 상세 화면 우측 상단 **⋮** 메뉴에서 제거
+2. 위 [설치 방법 · 데스크톱 앱](#데스크톱-앱) 절차를 그대로 다시 진행
+
 ## 구조
 
 ```
