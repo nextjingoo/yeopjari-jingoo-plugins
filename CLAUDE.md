@@ -8,15 +8,30 @@
 
 ```
 플러그인배포/
-├── .claude-plugin/marketplace.json   ← 마켓플레이스 카탈로그
+├── .claude-plugin/marketplace.json          ← 마켓플레이스 카탈로그
+├── updatelog/
+│   └── <plugin-name>_log.md                 ← 플러그인별 사용자 공지용 업데이트 로그 (버전별 누적)
 └── plugins/
     └── <plugin-name>/
-        └── .claude-plugin/plugin.json ← 플러그인 개별 메타데이터
+        ├── .claude-plugin/plugin.json       ← 플러그인 개별 메타데이터
+        ├── skills/<plugin-name>/SKILL.md    ← 실행 절차 본문
+        ├── agents/<agent-name>.md           ← 컴패니언 서브에이전트 (있는 경우)
+        └── introduction/<plugin-name>_intro.md ← 사용자 대상 소개 문서 (목적·주요 기능·기능 흐름·결과물·이점)
 ```
 
-새 지침을 플러그인으로 추가할 때:
-1. `plugins/` 아래 새 폴더 생성, 그 안에 `.claude-plugin/plugin.json` 작성 (name, displayName, version, description, author 필수)
-2. `marketplace.json`의 `plugins` 배열에 항목 추가 (name, source, version, description)
+`skills/`·`agents/`는 Claude Code 플러그인 스펙이 자동 스캔하는 예약 폴더고, `introduction/`은 스펙에 없는 임의 폴더라 무시된 채로 함께 배포된다(설치·검증에 영향 없음).
+
+## 원본과의 관계
+
+이 저장소의 플러그인은 손으로 새로 쓰지 않는다. 원본은 메인 작업 폴더(`(0)ClaudeCode`)의 `5-지침만들기/`에 있고, 그 프로젝트의 `guideline-plugin-deployer` 서브에이전트(`.claude/agents/지침만들기/`)가 원본을 분석해 이 저장소에 패키징한다. **원본 = 패키징 형태** 원칙에 따라 배포 과정에서 드러난 문제(환경 설명, 누락된 안내 등)는 이 저장소의 파일이 아니라 원본 표준지침에 먼저 반영되고, 그 결과가 여기로 그대로 옮겨진다.
+
+새 지침을 플러그인으로 추가하거나 기존 지침을 갱신할 땐 위 서브에이전트를 통해 진행하는 것이 기본이다. 그 에이전트가 만드는 산출물은 다음과 같다:
+1. `plugins/<plugin-name>/.claude-plugin/plugin.json` (name, displayName, version, description, author)
+2. `plugins/<plugin-name>/skills/<plugin-name>/SKILL.md`, 필요시 `agents/<agent-name>.md`
+3. `plugins/<plugin-name>/introduction/<plugin-name>_intro.md`
+4. `marketplace.json`의 `plugins` 배열 항목 (name, source, version, description)
+5. `updatelog/<plugin-name>_log.md` 사용자 공지 항목
+6. `PluginList.md` 표 갱신
 
 # 버전 관리
 

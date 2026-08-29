@@ -72,8 +72,12 @@ claude plugin install <플러그인 이름>@yeopjari-jingoo-plugins
 ```
 플러그인배포/
 ├── .claude-plugin/marketplace.json   ← 마켓플레이스 카탈로그
+├── updatelog/                        ← 플러그인별 업데이트 로그 (버전별 변경 내용)
 └── plugins/
     └── summary-report-writer/        ← 플러그인 하나당 폴더 하나
+        └── introduction/             ← 플러그인 소개 문서 (설치 전 미리보기용)
 ```
 
-새 지침을 추가할 땐 `plugins/` 아래에 폴더를 하나 만들고 `marketplace.json`의 `plugins` 배열에 항목을 추가합니다. 유지보수 시 지켜야 할 세부 규칙은 [CLAUDE.md](CLAUDE.md)를 참고합니다.
+각 플러그인이 무엇을 하는지 짧게 보고 싶다면 `plugins/<플러그인 이름>/introduction/` 안의 소개 문서를 먼저 읽어보세요. 무엇이 바뀌었는지는 `updatelog/<플러그인 이름>_log.md`에서 확인할 수 있습니다.
+
+유지보수 시 지켜야 할 세부 규칙은 [CLAUDE.md](CLAUDE.md)를 참고합니다.
