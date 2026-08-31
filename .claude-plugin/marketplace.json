@@ -8,7 +8,7 @@
     {
       "name": "summary-report-writer",
       "source": "./plugins/summary-report-writer",
-      "version": "1.0.2",
+      "version": "1.0.0",
       "description": "투자/사업 기획서 등 원본 자료를 임원 보고용 요약 보고서로 재구성하는 표준 프로세스. 원본 상세 파악 → 9개 항목 인터뷰 → 초안 작성 → 독립 자가검토 서브에이전트까지 포함."
     }
   ]
